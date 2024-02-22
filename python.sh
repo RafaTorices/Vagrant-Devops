@@ -7,6 +7,3 @@ apt-get install -y python3
 apt-get install -y python3-pip
 # Install virtualenv
 python3 -m pip install virtualenv
-# alias python=python3
-echo "alias python=python3" >>~/.bashrc
-source ~/.bashrc
