@@ -35,6 +35,8 @@ Vagrant.configure("2") do |config|
       newgrp docker
       docker run hello-world
     SHELL
+    # Install python
+    vmachine.vm.provision "shell", path: "python.sh"
     # Forwarded ports
     vmachine.vm.network "forwarded_port", guest: ENV['VAGRANT_PORT_GUEST'], host: ENV['VAGRANT_PORT_HOST']
   end

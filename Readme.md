@@ -6,6 +6,7 @@ Vagrant configuration to create a virtual machine with basic tools devops.
 
 - **git.sh**: Script to install git
 - **docker.sh**: Script to install docker
+- **python.sh**: Script to install python
 - **.env.example**: Example of environment configuration
 - **Vagrantfile**: Vagrant configuration file
 - **README.md**: This file
@@ -14,6 +15,7 @@ Vagrant configuration to create a virtual machine with basic tools devops.
 
 - **Git**: Version control system
 - **Docker**: Containerization platform
+- **Python**: Programming language
 
 ## Previous considerations
 
