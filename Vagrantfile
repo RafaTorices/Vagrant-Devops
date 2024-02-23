@@ -56,8 +56,6 @@ Vagrant.configure("2") do |config|
     vmachine.vm.provision "shell", path: "az-cli.sh"
     # Install kind
     vmachine.vm.provision "shell", path: "kind.sh"
-    # Install k9s
-    # vmachine.vm.provision "shell", path: "k9s.sh"
     # Install kops
     vmachine.vm.provision "shell", path: "kops.sh"
     # Install krew (Kubectl plugin manager) and plugins ctx, ns, tree, view-visualizations, access-matrix

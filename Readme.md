@@ -17,7 +17,6 @@ Vagrant configuration to create a virtual machine with basic tools devops.
 - **GCloud CLI**: Command line tool for Google Cloud Platform
 - **Azure CLI**: Command line tool for Microsoft Azure
 - **Kind**: Tool for running local Kubernetes clusters using Docker container “nodes”
-- **K9s**: Terminal-based UI to interact with your Kubernetes clusters
 - **kops**: Tool to create, destroy, upgrade and maintain production-grade, highly available, Kubernetes clusters from the command line
 - **krew**: Package manager for kubectl plugins, to extend kubectl's functionality:
   - **kubectx**: Tool to switch between clusters and namespaces
@@ -25,7 +24,6 @@ Vagrant configuration to create a virtual machine with basic tools devops.
   - **kubetree**: Tool to visualize the structure of Kubernetes resources
   - **kubeview-utilization**: Tool to visualize the resource utilization of Kubernetes resources
   - **kubeaccess-matrix**: Tool to visualize the access matrix of Kubernetes resources
-
 
 ## Previous considerations
 
@@ -52,6 +50,10 @@ Vagrant configuration to create a virtual machine with basic tools devops.
 - `vagrant provision` to re-run the provisioning scripts
 - `vagrant reload` to restart the virtual machine
 - `vagrant status` to check the status of the virtual machine
+
+## Contributing
+
+You can contribute to this project by forking the repository and making the changes you'd like to see. You can then submit a pull request.
 
 ## Author
 
