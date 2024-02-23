@@ -24,6 +24,8 @@ Vagrant.configure("2") do |config|
       # Update the system
       apt update
     SHELL
+    # Install brew
+    vmachine.vm.provision "shell", path: "brew.sh"
     # Install git
     vmachine.vm.provision "shell", path: "git.sh"
     # Install docker
@@ -34,9 +36,32 @@ Vagrant.configure("2") do |config|
       usermod -aG docker vagrant
       newgrp docker
       docker run hello-world
+      apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
     SHELL
     # Install python
     vmachine.vm.provision "shell", path: "python.sh"
+    # Install terraform
+    vmachine.vm.provision "shell", path: "terraform.sh"
+    # Install ansible
+    vmachine.vm.provision "shell", path: "ansible.sh"
+    # Install kubectl
+    vmachine.vm.provision "shell", path: "kubectl.sh"
+    # Install miniKube
+    vmachine.vm.provision "shell", path: "minikube.sh"
+    # Install helm
+    vmachine.vm.provision "shell", path: "helm.sh"
+    # Install aws-cli
+    vmachine.vm.provision "shell", path: "aws-cli.sh"
+    # Install gcloud
+    vmachine.vm.provision "shell", path: "gcloud.sh"
+    # Install kind
+    vmachine.vm.provision "shell", path: "kind.sh"
+    # Install k9s
+    vmachine.vm.provision "shell", path: "k9s.sh"
+    # Install kops
+    vmachine.vm.provision "shell", path: "kops.sh"
+    # Install krew (Kubectl plugin manager) and plugins ctx, ns, tree, view-visualizations, access-matrix
+    vmachine.vm.provision "shell", path: "krew.sh"
     # Forwarded ports
     vmachine.vm.network "forwarded_port", guest: ENV['VAGRANT_PORT_GUEST'], host: ENV['VAGRANT_PORT_HOST']
   end

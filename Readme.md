@@ -2,20 +2,30 @@
 
 Vagrant configuration to create a virtual machine with basic tools devops.
 
-## Table of Contents
-
-- **git.sh**: Script to install git
-- **docker.sh**: Script to install docker
-- **python.sh**: Script to install python
-- **.env.example**: Example of environment configuration
-- **Vagrantfile**: Vagrant configuration file
-- **README.md**: This file
-
 ## Tools provisioned
 
+- **homebrew**: Package manager
 - **Git**: Version control system
 - **Docker**: Containerization platform
+- **Docker Compose**: Tool for defining and running multi-container Docker applications
 - **Python**: Programming language
+- **Terraform**: Infrastructure as code software
+- **Ansible**: Automation tool
+- **Kubectl**: Command line tool for Kubernetes
+- **minikube**: Tool that makes it easy to run Kubernetes locally
+- **Helm**: Package manager for Kubernetes
+- **AWS CLI**: Command line tool for AWS
+- **gcloud**: Command line tool for Google Cloud Platform
+- **Kind**: Tool for running local Kubernetes clusters using Docker container “nodes”
+- **K9s**: Terminal-based UI to interact with your Kubernetes clusters
+- **kops**: Tool to create, destroy, upgrade and maintain production-grade, highly available, Kubernetes clusters from the command line
+- **krew**: Package manager for kubectl plugins, to extend kubectl's functionality:
+  - **kubectx**: Tool to switch between clusters and namespaces
+  - **kubens**: Tool to switch between Kubernetes namespaces
+  - **kubetree**: Tool to visualize the structure of Kubernetes resources
+  - **kubeview-utilization**: Tool to visualize the resource utilization of Kubernetes resources
+  - **kubeaccess-matrix**: Tool to visualize the access matrix of Kubernetes resources
+
 
 ## Previous considerations
 
