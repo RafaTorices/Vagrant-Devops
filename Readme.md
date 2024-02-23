@@ -4,7 +4,6 @@ Vagrant configuration to create a virtual machine with basic tools devops.
 
 ## Tools provisioned
 
-- **homebrew**: Package manager
 - **Git**: Version control system
 - **Docker**: Containerization platform
 - **Docker Compose**: Tool for defining and running multi-container Docker applications
@@ -15,7 +14,8 @@ Vagrant configuration to create a virtual machine with basic tools devops.
 - **minikube**: Tool that makes it easy to run Kubernetes locally
 - **Helm**: Package manager for Kubernetes
 - **AWS CLI**: Command line tool for AWS
-- **gcloud**: Command line tool for Google Cloud Platform
+- **GCloud CLI**: Command line tool for Google Cloud Platform
+- **Azure CLI**: Command line tool for Microsoft Azure
 - **Kind**: Tool for running local Kubernetes clusters using Docker container “nodes”
 - **K9s**: Terminal-based UI to interact with your Kubernetes clusters
 - **kops**: Tool to create, destroy, upgrade and maintain production-grade, highly available, Kubernetes clusters from the command line

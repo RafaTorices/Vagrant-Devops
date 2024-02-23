@@ -24,8 +24,6 @@ Vagrant.configure("2") do |config|
       # Update the system
       apt update
     SHELL
-    # Install brew
-    vmachine.vm.provision "shell", path: "brew.sh"
     # Install git
     vmachine.vm.provision "shell", path: "git.sh"
     # Install docker
@@ -53,11 +51,13 @@ Vagrant.configure("2") do |config|
     # Install aws-cli
     vmachine.vm.provision "shell", path: "aws-cli.sh"
     # Install gcloud
-    vmachine.vm.provision "shell", path: "gcloud.sh"
+    vmachine.vm.provision "shell", path: "gcloud-cli.sh"
+    # Install az-cli
+    vmachine.vm.provision "shell", path: "az-cli.sh"
     # Install kind
     vmachine.vm.provision "shell", path: "kind.sh"
     # Install k9s
-    vmachine.vm.provision "shell", path: "k9s.sh"
+    # vmachine.vm.provision "shell", path: "k9s.sh"
     # Install kops
     vmachine.vm.provision "shell", path: "kops.sh"
     # Install krew (Kubectl plugin manager) and plugins ctx, ns, tree, view-visualizations, access-matrix
